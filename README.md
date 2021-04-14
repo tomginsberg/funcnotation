@@ -9,6 +9,6 @@ pip install git+https://github.com/tomginsberg/funcnotation.git
 ### Example
 ```python
 from funcnotation import PrePostFix as P
-# find the sum of 8 random intergers squared
+# find the sum of 8 random integers squared
 P(sum) @ ([randint(0, 10) for _ in range(8)] // P(lambda x: [i**2 for i in x]))
 ```
