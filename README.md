@@ -3,9 +3,9 @@
 An example for creating pip installable packages
 
 ### Setup
-```
+```bash
 pip install git+https://github.com/tomginsberg/funcnotation.git
-``
+```
 ### Example
 ```python
 from funcnotation import PrePostFix as P
