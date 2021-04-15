@@ -14,14 +14,16 @@ P(sum) @ ([randint(0, 10) for _ in range(8)] // P(lambda x: [i**2 for i in x]))
 ```
 ### Example 2
 ```python
+from funcnotation import PrePostFix as P
 import numpy as np
+
 def reshape(*size):
     def f(x):
-        return np.reshape(x, size=args)
+        return np.reshape(x, size=size)
     return P(f)
     
 [1,2,3,4] // reshape(2,2)
 
 # array([[1, 2],
-#       [3, 4]])
+#        [3, 4]])
 ```
